@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="component/form.css">
+            <link rel="stylesheet" href="component/bootstrap.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="component/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <style>
+            .input-group-addon{
+                background-color:red;
+                color:white;
+                    font-family:agency fb;
+                    font-size: 20px;
+                    padding:10px 25px;
+
+                }
+                .form-control{
+                      height:42px;  
+                      width:300px;
+                }
+        </style>
+    </head>
+        <body>
+            <div id="tophead">
+                <center><span id="heading">Property Details</span></center>
+
+            </div>
+            <div id="form">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'hostel')">HOSTEL/PG</button>
+                    <button class="tablinks" onclick="openCity(event, 'flat')">FLAT</button>
+                    
+                    </div>
+
+                    <div id="hostel" class="tabcontent">
+                        <form class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group">
+                            <label for="name" class="col-lg-2 control-label">Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            </div>
+                            
+                            <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="nummber" class="col-lg-2 control-label">Contact No.</label>
+                            <div class="col-lg-10">
+                                <input type="number" class="form-control" id="no" placeholder="enter ur mobile no.">
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="avability" class="col-lg-2 control-label">Avability of rooms</label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="">Single 
+                                </label>
+                                <label class="checkbox-inline">
+                                <input type="checkbox" value="">Shared
+                                </label>
+                                <label class="checkbox-inline">
+                                <input type="checkbox" value="">Both
+                                </label>  
+                            </div>
+                             <div class="form-group">
+                            <label for="locality" class="col-lg-2 control-label">locality</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="name" placeholder="locality">
+                            </div>
+                            </div>
+                             <div class="form-group">
+                            <label for="address" class="col-lg-2 control-label">Full Address</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="name" placeholder="your full address">
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="textArea" class="col-lg-2 control-label">Description</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" rows="3" id="textArea"></textarea>
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="avability" class="col-lg-2 control-label">Avability of rooms</label>
+                            <table style="text-align:left ;width:500px">
+                            <tr>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">A.C. 
+                                </label></td>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">A.C./NON A.C.
+                                </label></td>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">Refrigerator
+                                 </label></td>
+                            </tr>
+                            <tr>
+                            <td style="text-align:left ;width:33%">     <label class="checkbox-inline">
+                                <input type="checkbox" value="">Gas Connection 
+                                </label></td>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">Wifi Connection
+                                </label></td>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">laundary
+                                 </label></td>
+                            </tr>
+                            <tr>
+                            <td style="text-align:left ;width:33%">     <label class="checkbox-inline">
+                                <input type="checkbox" value="">Bed 
+                                </label></td>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">Attached washroom
+                                </label></td>
+                            <td style="text-align:left ;width:33%"    >    <label class="checkbox-inline">
+                                <input type="checkbox" value="">R.O. water
+                                </label></td>  
+                            </tr>
+                            </table>                                    
+                            </div>
+
+                             <div class="form-group">
+                            <div><br>
+                                <label for="price" class="col-lg-2 control-label">Monthly Rent</label>
+                                
+                                <input type="text" class="form-control" id="name" placeholder='(&#8377)'>
+                                <br>
+                                <label for="price" class="col-lg-2 control-label">Security Deposit</label>
+                                
+                                <input type="price" class="form-control" id="name" placeholder="(&#8377)">
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <div id="addimage" >
+                                     <span class="glyphicon glyphicon-plus" aria-hidden="true" style="font-size:70px;left:25px;top:13px;color:lightgray"></span>
+                                </div>          
+                            </div>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <br>
+                                <button type="reset" class="btn btn-default">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            </div>
+                    </fieldset>
+                </form>
+
+                        
+                      
+                                            
+                    </div>
+
+                    <div id="flat" class="tabcontent">
+                   <form class="form-horizontal">
+                        <fieldset>
+                            
+                            <div class="form-group">
+                            <label for="name" class="col-lg-2 control-label">Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            </div>
+                            
+                            <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="nummber" class="col-lg-2 control-label">Contact No.</label>
+                            <div class="col-lg-10">
+                                <input type="number" class="form-control" id="no" placeholder="enter ur mobile no.">
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="avability" class="col-lg-2 control-label">Avability of Flats</label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="">One BHK
+                                </label>
+                                <label class="checkbox-inline">
+                                <input type="checkbox" value="">Two BHK
+                                </label>
+                                <label class="checkbox-inline">
+                                <input type="checkbox" value="">Three BHK
+                                </label>  
+                            </div>
+                             <div class="form-group">
+                            <label for="locality" class="col-lg-2 control-label">locality</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="name" placeholder="locality">
+                            </div>
+                            </div>
+                             <div class="form-group">
+                            <label for="address" class="col-lg-2 control-label">Full Address</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="name" placeholder="your full address">
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="textArea" class="col-lg-2 control-label">Description</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" rows="3" id="textArea"></textarea>
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="avability" class="col-lg-2 control-label">Services</label>
+                            <table style="text-align:left ;width:500px">
+                            <tr>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">Bed                                </label></td>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">Fridge
+                                </label></td>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">A.C
+                                 </label></td>
+                            </tr>
+                            <tr>
+                            <td style="text-align:left ;width:33%">     <label class="checkbox-inline">
+                                <input type="checkbox" value="">Cooler
+                                </label></td>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">Wardrobe
+                                </label></td>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">T.V
+                                 </label></td>
+                            </tr>
+                            <tr>
+                            <td style="text-align:left ;width:33%">     <label class="checkbox-inline">
+                                <input type="checkbox" value="">Security
+                                </label></td>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">Sofa
+                                </label></td>
+                            <td style="text-align:left ;width:33%"    >    <label class="checkbox-inline">
+                                <input type="checkbox" value="">R.O. water
+                                </label></td>  
+                            </tr>
+							<tr>
+                            <td style="text-align:left ;width:33%">     <label class="checkbox-inline">
+                                <input type="checkbox" value="">Parking
+                                </label></td>
+                            <td style="text-align:left ;width:33%">    <label class="checkbox-inline">
+                                <input type="checkbox" value="">Lift Facility
+                                </label></td>
+                            <td style="text-align:left ;width:33%"    >    <label class="checkbox-inline">
+                                <input type="checkbox" value="">Swimming Pool
+                                </label></td>  
+                            </tr>
+
+                            </table>                                    
+                            </div>
+
+                             <div class="form-group">
+                            <div><br>
+                                <label for="price" class="col-lg-2 control-label">Monthly Rent</label>
+                                
+                                <input type="text" class="form-control" id="name" placeholder='(&#8377)'>
+                                <br>
+                                <label for="price" class="col-lg-2 control-label">Security Deposit</label>
+                                
+                                <input type="price" class="form-control" id="name" placeholder="(&#8377)">
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <div id="addimage" >
+                                     <span class="glyphicon glyphicon-plus" aria-hidden="true" style="font-size:70px;left:25px;top:13px;color:lightgray"></span>
+                                </div>          
+                            </div>
+                            </div>
+                            
+                            <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <br>
+                                <button type="reset" class="btn btn-default">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            </div>
+                    </fieldset>
+                </form>
+          </div>
+
+
+                    <script>
+                    function openCity(evt, cityName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(cityName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                    </script>
+            </div>
+         </body>
+</html>

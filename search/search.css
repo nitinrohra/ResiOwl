@@ -1,0 +1,54 @@
+.data {
+	width: 80%;
+	float: left;
+	margin: 2% 10%;
+	border-radius: 30px;
+	box-shadow:25px 25px 100px #000;
+}
+.image {
+	width: 30%;
+	float: left;
+	overflow: hidden;
+	padding: 2%;
+}
+.logoimg{
+    top:-2px;
+    position: absolute;
+    height: 50px;
+    width: 120px;
+
+} 
+.content {
+	float: left;
+	width: 70%;
+	
+}
+.box {
+	margin: 3%;
+	height: 150px;
+	background-color: white;
+}
+.des {
+	margin-left: 3%;
+	margin-right: 5%;
+}
+.content h4,h3{
+	display:inline;
+	margin-right: 2%;
+}
+.content h4 {
+	margin-left: 3%;
+}
+.des textarea {
+	width: 50%;
+}
+.list{
+	display: inline;
+	margin: 2%;
+}
+body {
+	background-image: url('home-wallpaper-20.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
