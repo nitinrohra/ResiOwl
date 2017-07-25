@@ -46,9 +46,19 @@
 	display: inline;
 	margin: 2%;
 }
-body {
+.body {
 	background-image: url('home-wallpaper-20.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 }
 
+.book {
+	float: right;
+	padding:2%;
+}
+.slider  img:hover{
+	transform: scale(1.2);
+}
+.slider img{
+	transition: all 1s ease;
+}
