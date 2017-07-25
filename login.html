@@ -2,7 +2,7 @@
   <head>
   	<title>Sign-Up</title>
 		<script src=component/angular.js></script>
-		<script src="component/app1.js"></script>
+		<script src="component/app.js"></script>
 		<link rel="stylesheet" type="text/css" href="component/login.css">
 	 	<link href="component/bootstrap.css" type="text/css" rel="stylesheet">
 	</head>
@@ -118,9 +118,12 @@
             </label>
 						<span ng-if="sform.gender.$invalid && sform.$submitted">Gender Required<br></span><br><br/>
 							</div>
-							<div class=" hidden-xs col-sm-3"></div>
+							<div class="col-xs-6"><span style="background-color:grey; border:2px solid teal;"  class="form-control captchadiv">{{ctrl.captcha}}</span></div>
+							<div class="col-xs-6"><input class="form-control" ng-model="ctrl.takecaptcha"></input></div><br>
+							<br><br><br>
+							<div class=" hidden-xs col-sm-3"></div><br><br><br>
 							<div class="col-xs-12 col-sm-6">
-						 <button type="submit" class="btn btn-danger btn-block">Create An Account</button>
+						 <button style="margin-top:5%" ng-click="ctrl.check()" type="submit" class="btn btn-danger btn-block">Create An Account</button>
 							</div>
 						</div>
 				</form>	
