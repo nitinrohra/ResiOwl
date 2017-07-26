@@ -4,7 +4,7 @@ function formctrl(){
     
     var ctrl=this;
     ctrl.correctcaptcha=false;
-    ctrl.logstatus=false;
+    ctrl.logstatus=true;
    
     ctrl.submit=function(sform){
         console.log(sform);
