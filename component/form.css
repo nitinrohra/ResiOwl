@@ -11,7 +11,8 @@ body{
     padding-top: 20px;
     top: 0px;
     font-family:agency fb;
-    background-color: #e80d0d;
+    /* background-color: #e80d0d; */
+    background-color: teal;
     z-index: 1000;
 }
 #heading{
@@ -30,12 +31,14 @@ body{
 div.tab {
     margin-left:40%;
     border: 1px solid #ccc;
-    background-color: #e80d0d;
+    /* background-color: #e80d0d; */
+    background-color: teal;
 }
 
 /* Style the buttons inside the tab */
 div.tab button {
-    background-color: #e80d0d;
+    /* background-color: #e80d0d; */
+    background-color: teal;
     float: left;
     border: none;
     outline: none;
@@ -52,7 +55,8 @@ div.tab button {
 
 /* Change background color of buttons on hover */
 div.tab button:hover {
-    background-color: #f44242;
+   /* background-color: #e80d0d; */
+    background-color: cadetblue;
 }
 
 /* Create an active/current tablink class */
